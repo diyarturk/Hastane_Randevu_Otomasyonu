@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ACF812FA-5ED4-47EF-90D2-38481860F9A3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HASTANE_RANDEVU_SİSTEMİ</RootNamespace>
+    <AssemblyName>HASTANE RANDEVU SİSTEMİ</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminGirisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminGirisi.Designer.cs">
+      <DependentUpon>AdminGirisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminpaneli.cs" />
+    <Compile Include="bilgiguncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bilgiguncelle.Designer.cs">
+      <DependentUpon>bilgiguncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="giris.cs" />
+    <Compile Include="guncelle.cs" />
+    <Compile Include="PAROLA UNUTTUM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAROLA UNUTTUM.Designer.cs">
+      <DependentUpon>PAROLA UNUTTUM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RANDEVU ALIM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RANDEVU ALIM.Designer.cs">
+      <DependentUpon>RANDEVU ALIM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RANDEVU GİRİS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RANDEVU GİRİS.Designer.cs">
+      <DependentUpon>RANDEVU GİRİS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="randevualim.cs" />
+    <Compile Include="RANDEVUGECMİSİ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RANDEVUGECMİSİ.Designer.cs">
+      <DependentUpon>RANDEVUGECMİSİ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="randevugoster.cs" />
+    <Compile Include="yeniuye.cs" />
+    <Compile Include="YENİÜYE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YENİÜYE.Designer.cs">
+      <DependentUpon>YENİÜYE.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminGirisi.resx">
+      <DependentUpon>AdminGirisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bilgiguncelle.resx">
+      <DependentUpon>bilgiguncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAROLA UNUTTUM.resx">
+      <DependentUpon>PAROLA UNUTTUM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RANDEVU ALIM.resx">
+      <DependentUpon>RANDEVU ALIM.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RANDEVU GİRİS.resx">
+      <DependentUpon>RANDEVU GİRİS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RANDEVUGECMİSİ.resx">
+      <DependentUpon>RANDEVUGECMİSİ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YENİÜYE.resx">
+      <DependentUpon>YENİÜYE.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
